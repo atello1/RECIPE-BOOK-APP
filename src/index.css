@@ -1,0 +1,220 @@
+img {
+  max-width: 100%
+}
+
+#root {
+  background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url("images/image8.jpg") no-repeat right top / cover;
+  min-height: 100vh;
+  background-size: cover;
+}
+
+.container-custom {
+  margin: 0 auto;
+  width: 90%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.container-custom * {
+  color: #fff
+}
+
+.container-custom__inner {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-end;
+  /*cuando es row*/
+  justify-content: center;
+  /*justify-content: flex-end; cuando es column*/
+  min-height: calc(100vh - 56px);
+}
+
+@media (min-width: 768px) {
+  .container-custom {
+    margin-left: 120px;
+    max-width: 550px;
+  }
+
+  .container-custom--sm {
+    max-width: 400px;
+  }
+
+  .container-custom__inner {
+    justify-content: start;
+    padding-top: 150px;
+  }
+}
+
+.form-single-border input[type="text"],
+.form-single-border input[type="password"],
+.form-single-border input[type="email"] {
+  background: none;
+  border: none;
+  border-bottom: 2px solid #ffffff2e;
+  width: 100%;
+  color: #fff;
+  margin-bottom: 40px;
+  padding-bottom: 10px;
+}
+
+::placeholder {
+  color: #fff;
+  text-transform: uppercase;
+  opacity: 1;
+}
+
+input:focus::placeholder {
+  opacity: 0;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s;
+  -webkit-text-fill-color: #fff !important;
+}
+
+.error {
+  border: 1px solid #de4f4f;
+  font-size: 12px;
+  text-align: center;
+  padding: 11px 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.btn__app {
+  background: #000;
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: 16px 30px;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  width: 100%;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: #fff
+}
+
+.btn__app:hover {
+  background: #2a1d17;
+  text-decoration: none;
+  color: #fff
+}
+
+.recipes form {
+  padding: 30px;
+  border-radius: 5px;
+  background: #5452520d;
+  background: #d2cfcfb5;
+  margin-bottom: 15px
+}
+
+.recipes form input:-webkit-autofill,
+.recipes form input:-webkit-autofill:hover,
+.recipes form input:-webkit-autofill:focus,
+.recipes form input:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s;
+  -webkit-text-fill-color: #000 !important;
+}
+
+.recipes input,
+.recipes textarea {
+  width: 100%;
+  margin-bottom: 15px;
+  border: none
+}
+
+.recipes form .image-uploaded {
+  display: block;
+  margin-bottom: 15px
+}
+
+.recipe-box-wp {
+  margin-bottom: 30px
+}
+
+.recipe-box {
+  background: #f8f9fac4;
+  border-radius: 5px;
+  padding: 27px;
+  display: inline-flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.recipe-box h3 {
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+.recipe-box img {
+  border-radius: 5px;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.recipe-box .recipeDescription {
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+.recipe-box .btn__app {
+  margin-bottom: 0px;
+  margin-top: auto
+}
+
+.home--title {
+  font-size: 1.8em;
+  opacity: 0.8
+}
+
+.home--intro {
+  font-size: 16px;
+  font-weight: 200;
+  opacity: 0.8
+}
+
+@media (min-width: 768px) {
+  .home--title {
+    font-size: 2.8em
+  }
+
+  .home--intro {
+    font-size: 1.2em;
+  }
+}
+
+.navbar {
+  background: #000000 !important
+}
+
+.welcome {
+  color: #fff;
+  font-size: 16px;
+  text-align: right;
+  margin-right: 1.6rem;
+  padding-top: 7px;
+  opacity: 0.7;
+  text-transform: uppercase;
+  padding-bottom: 15px
+}
+
+.access {
+  line-height: 15px;
+  display: block;
+  opacity: 0.7;
+}

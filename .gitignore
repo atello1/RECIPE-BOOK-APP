@@ -1,0 +1,7 @@
+node_modules
+build
+.DS_Store
+src/recipes-simple.js
+src/images/recipes
+src/Firebase-original.js
+src/vars.js
